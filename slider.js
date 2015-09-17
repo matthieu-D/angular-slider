@@ -87,6 +87,7 @@
     return {
       restrict: 'E',
       scope: {
+	presentOnly:'=',
         floor: '@',
         ceiling: '@',
         values: '=?',
@@ -286,7 +287,7 @@
                   setPointers();
                   event.stopPropagation();
                   event.preventDefault();
-                  ngDocument.bind(events.move, onMove);
+		  if(!scope.presentOnly) ngDocument.bind(events.move, onMove);
                   return ngDocument.bind(events.end, onEnd);
                 };
                 return handle.bind(events.start, onStart);
