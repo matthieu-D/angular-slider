@@ -1,5 +1,5 @@
 {
-  "name": "angular-slider",
+  "name": "angular-slider-fork-present-only",
   "description": "Slider directive implementation for AngularJS, without jQuery dependencies.",
   "main": "slider.js",
   "keywords": [
@@ -12,7 +12,7 @@
     "compass": "latest",
     "coffee-script": "latest"
   },
-  "author": "PopSugar",
+  "author": "Matthieu Drula",
   "license": "MIT",
   "readmeFilename": "README.md",
   "ignore": ["*",
